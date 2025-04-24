@@ -1,0 +1,42 @@
+@use "../../../scss/main" as *;
+
+.whoWeAreSec {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        color: #fff;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .rightSec {
+            max-width: 600px;
+
+            h2 {
+                font-family: RacingSansOne;
+                font-size: 45px;
+                line-height: 52px;
+                margin-bottom: 10px;
+                color: #17BEFF;
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                p {
+                    font-family: Poppins-Regular;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

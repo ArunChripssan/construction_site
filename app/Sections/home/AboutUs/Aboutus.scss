@@ -1,7 +1,15 @@
 @use "../../../scss/main" as *;
 
 .about-us {
-    min-height: 100dvh;
+    position: relative;
+
+    .neonEllipse {
+        position: absolute;
+        top: 20;
+        left: 20;
+        opacity: 0.6;
+    }
+
     .title {
         margin-block: 80px 40px;
     }

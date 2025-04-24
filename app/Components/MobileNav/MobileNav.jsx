@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import './MobileNav.scss'
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const MobileNav = () => {
     const [open, setOpen] = useState(false)
@@ -21,8 +22,19 @@ const MobileNav = () => {
             <div className="mobileNav">
                 <div className="wrapper">
                     <div className="navContainer">
-                        <img className="logo" src="./assets/logo.png" alt="" />
-                        <img className="ham-menu" onClick={() => setOpen(!open)} src="./assets/icons/hamburger-menu.png" alt="" />
+                        <Image 
+                            src="/assets/logo.png"
+                            alt=""
+                            width={180}
+                            height={60}
+                        />
+                        <Image 
+                            src="/assets/icons/hamburger-menu.png"
+                            alt=""
+                            width={32}
+                            height={32}
+                            onClick={() => setOpen(!open)}
+                        />
                         {open && (
                             <motion.div
                                 initial={{opacity: 0}}

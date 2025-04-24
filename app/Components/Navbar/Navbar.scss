@@ -2,24 +2,25 @@
 
 .nav {
     position: fixed;
-    z-index: 999;
     font-family: RacingSansOne;
     width: 100%;
     background-color: rgba(#33b9ed, 0.067);
     backdrop-filter: blur(100px);
     border-bottom: 1px solid #17BEFF;
+    z-index: 999;
+    display: block;
     
     .container {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 80px;
+        gap: 30px;
         height: 88px;
 
         .logo {
             width: 160px;
             border-radius: 40px;
-            background-color: rgba(255, 255, 255, 0.965);
+            background-color: rgba(255, 255, 255, 0.665);
             backdrop-filter: blur(100px);
         }
         
@@ -27,12 +28,45 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            gap: 35px;
         }
         
         .nav-item {
+            margin: 0 18px;
+            position: relative;
             list-style: none;
-        }
+    
+            .nav-link {
+              color: #fff;
+              text-decoration: none;
+              font-size: 18px;
+              font-weight: 500;
+              padding: 10px 0;
+              position: relative;
+              transition: color 0.3s ease;
+    
+              &:hover {
+                color: #17BEFF;
+              }
+    
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 3px;
+                width: 100%;
+                background-color: #17BEFF;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.4s ease;
+              }
+    
+              &.active,
+              &:hover::after {
+                transform: scaleX(1);
+              }
+            }
+          }
         
         .contact {
             font-family: RacingSansOne;
@@ -40,12 +74,13 @@
             padding: 10px 20px;
             border: 2px solid #17BEFF;
             border-radius: 40px;
-            background: none;
+            background: transparent;
             color: #fff;
             cursor: pointer;
+            transition: all 0.5s ease;
             
-            :hover {
-                background: #17BEFF;
+            &:hover {
+                background-color: #17BEFF;
             }
         }
         .ham-menu {

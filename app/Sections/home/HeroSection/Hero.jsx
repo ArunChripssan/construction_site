@@ -1,29 +1,29 @@
 import React from "react";
-import './Hero.scss'
+import './Hero.scss';
+import Image from "next/image";
+import Carousel from "../../../Components/Carousel/Carousel";
+import Link from "next/link";
+import SubCarousel from "../../../Components/SubCarousel/SubCarousel";
+import LandmarksSlider from "../../../Components/LandmarksSlider/LandmarksSlider";
 
 const Hero = () => {
-  return (
-        <div className="heroSec">
-            <div className="bannerImg">
-                <img className="bgImg" src=".\assets\Carousel\img1.jpg"/>
-                <span className="overlay"></span>
-            </div>
-            <div className="bannerSubImg">
-                <img src=".\assets\Carousel\img1.jpg" alt="" />
-            </div>
+    return (
+        <div className="homeBannerSec">
             <div className="bannerText">
-                <h1 >
-                <span className="color">Building Landmarks</span>
-                    <br /> Creating Futures
+                <h1>
+                    <span className="color">Building Landmarks</span><br /> Creating Futures
                 </h1>
                 <p>
                     “ With over 20 years of excellence, we deliver worldclass
                     construction solutions tailored to your vision. ”
                 </p>
-                <button>Contact Us</button>
+              <button><Link href="/contact">Get a Quote</Link></button>
             </div>
+            <Carousel/>
+            <SubCarousel/>
+            <LandmarksSlider/>
         </div>
-  );
+    );
 };
 
 export default Hero;

@@ -1,8 +1,8 @@
 import React from "react";
-import {ourServices} from '../../../data/footer'
-import { projects } from "../../../data/footer";
-import './Footer.scss'
 import Link from "next/link";
+import Image from "next/image";
+import {ourServices, projects} from '../../../data/footer'
+import './Footer.scss'
 
 const Footer = () => {
     return (
@@ -35,19 +35,44 @@ const Footer = () => {
                 </p>
                 <div className="social-media">
                     <Link href="">
-                        <img src=".\assets\icons\facebook.png" alt="" />
+                        <Image 
+                            src="/assets/icons/facebook.png"
+                            alt=""
+                            width={24}
+                            height={24}
+                        />
                     </Link>
                     <Link href="">
-                        <img src=".\assets\icons\linkedin.png" alt="" />
+                        <Image 
+                            src="/assets/icons/linkedin.png"
+                            alt=""
+                            width={24}
+                            height={24}
+                        />
                     </Link>
                     <Link href="">
-                        <img src=".\assets\icons\instagram.png" alt="" />
+                        <Image 
+                            src="/assets/icons/instagram.png"
+                            alt=""
+                            width={24}
+                            height={24}
+                        />
                     </Link>
                     <Link href="">
-                        <img src=".\assets\icons\whatsapp.png" alt="" />
+                        <Image 
+                            src="/assets/icons/whatsapp.png"
+                            alt=""
+                            width={24}
+                            height={24}
+                        />
                     </Link>
                     <Link href="">
-                        <img src=".\assets\icons\twitter.png" alt="" />
+                        <Image 
+                            src="/assets/icons/twitter.png"
+                            alt=""
+                            width={24}
+                            height={24}
+                        />
                     </Link>
                 </div>
             </div>

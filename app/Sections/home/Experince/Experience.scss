@@ -8,6 +8,18 @@
     align-items: center;
     text-align: center;
     margin-top: 80px;
+
+    .neonEllipse {
+        position: absolute;
+        top: 30;
+        right: -15;
+        opacity: 0.6;
+    }
+
+    .aboutus {
+        position: relative;
+        z-index: 2;
+    }
     
     .desc {
         display: flex;

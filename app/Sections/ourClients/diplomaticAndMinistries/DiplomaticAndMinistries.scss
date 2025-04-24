@@ -1,0 +1,39 @@
+@use "../../../scss/main.scss" as *;
+
+.diplomaticAndMinistriesSec {
+    text-align: center;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        color: #ffffff;
+        margin-bottom: 2rem;
+        letter-spacing: 1px;
+        font-size: 50px;
+        background: linear-gradient(90deg, #ffffff, #048dc3 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; 
+        justify-items: center;
+        align-items: center;
+        
+        .logo-item {
+            background-color: rgba(#feffff, 0.067);
+            backdrop-filter: blur(100px);
+            border-radius: 8px;
+            padding: 2rem;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+}

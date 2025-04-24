@@ -1,0 +1,34 @@
+@use "../../scss/main" as *;
+
+.SubCarouselContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    .slider {
+        position: relative;
+        height: 250px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        .sliderImg {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .slick-center {
+            .sliderImg {
+                transform: scale(1.05);
+                border: 4px solid white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        
+        .slick-slide {
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
