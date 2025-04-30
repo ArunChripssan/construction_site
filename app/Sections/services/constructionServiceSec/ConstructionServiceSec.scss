@@ -1,0 +1,10 @@
+@use "../../../scss/main" as *;
+
+.constructionServiceSec {
+    background-color: #4D4B4B69;
+
+    .content {
+        display: flex;
+        align-items: center;
+    }
+}

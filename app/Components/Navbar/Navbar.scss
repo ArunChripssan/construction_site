@@ -34,6 +34,19 @@
             margin: 0 18px;
             position: relative;
             list-style: none;
+
+            .about {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            .projects {
+                display: flex;
+                align-items: center;
+                gap:5px;
+            }
+
     
             .nav-link {
               color: #fff;

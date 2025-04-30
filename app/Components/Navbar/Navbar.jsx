@@ -43,8 +43,15 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="/projects">
+                                <Link className="nav-link projects" href="/projects">
                                     PROJECTS
+                                <Image 
+                                    src="/assets/icons/down-arrow.png"
+                                    alt=""
+                                    width={16}
+                                    height={16}
+                                    className="downArrow"
+                                />
                                 </Link>
                             </li>
                             <li className="nav-item">

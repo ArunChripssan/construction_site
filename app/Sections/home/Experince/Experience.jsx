@@ -3,6 +3,7 @@ import Image from "next/image";
 import {experienceDesc} from '../../../../data/experience'
 import './Experience.scss'
 
+
 const Experience = () => {
     return (
         <div className="experince-container">

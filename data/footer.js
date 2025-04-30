@@ -21,7 +21,7 @@ export const ourServices = [
     },
     {
         id: "6",
-        title: "Safety ProgramSafety Program",
+        title: "Safety Program",
     },
 ];
 

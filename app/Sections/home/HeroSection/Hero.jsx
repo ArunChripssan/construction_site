@@ -4,7 +4,6 @@ import Image from "next/image";
 import Carousel from "../../../Components/Carousel/Carousel";
 import Link from "next/link";
 import SubCarousel from "../../../Components/SubCarousel/SubCarousel";
-import LandmarksSlider from "../../../Components/LandmarksSlider/LandmarksSlider";
 
 const Hero = () => {
     return (
@@ -21,7 +20,6 @@ const Hero = () => {
             </div>
             <Carousel/>
             <SubCarousel/>
-            <LandmarksSlider/>
         </div>
     );
 };

@@ -1,0 +1,38 @@
+@use "../../scss/main" as *;
+
+
+.connector {
+    background: #17BEFF;
+}
+
+.projectsCompleted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    gap: 20px;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 20px;
+}
+
+.awards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    gap: 20px;
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 20px;
+}

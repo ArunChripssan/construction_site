@@ -1,34 +1,29 @@
 @use "../../scss/main" as *;
 
-.SubCarouselContainer {
-    max-width: 1000px;
-    margin: 0 auto;
-    
-    .slider {
-        position: relative;
-        height: 250px;
-        padding: 0 10px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        
-        .sliderImg {
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
 
-        .slick-center {
-            .sliderImg {
-                transform: scale(1.05);
-                border: 4px solid white;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            }
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .slick-active {
+        img {
+            height: 220px;
+            transition: all 0.3s ease;
         }
-        
-        .slick-slide {
-            opacity: 0.7;
-            transition: opacity 0.3s ease;
+    }
+    .slick-center {
+        img {
+            transition: all 0.3s ease;
+            height: 250px;
         }
     }
 }

@@ -9,11 +9,27 @@ export const  carouselImages = [
     },
     {
         id: 3,
-        imgSrc: "/assets/Carousel/img2.jpg",
+        imgSrc: "/assets/Carousel/img1.jpg",
     },
     {
         id: 4,
+        imgSrc: "/assets/Carousel/img2.jpg",
+    },
+    {
+        id: 5,
         imgSrc: "/assets/Carousel/img1.jpg",
+    },
+    {
+        id: 6,
+        imgSrc: "/assets/Carousel/img2.jpg",
+    },
+    {
+        id: 7,
+        imgSrc: "/assets/Carousel/img1.jpg",
+    },
+    {
+        id: 8,
+        imgSrc: "/assets/Carousel/img2.jpg",
     },
 ]
 
